@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Self Sovereign Crypto",
+    "short_name": "SSC",
+    "description": "Creates and stores key pairs which in turn can be used to sign, encrypt/decrypt records or share encrypted aes keys.",
+    "version": "0.0.0.1",
+    "author": "Gaurav Singh @ SkillsChain",
+    "background": {
+        "scripts": [
+            "assets/scripts/utils.js",
+            "assets/scripts/nacl.js",
+            "assets/scripts/nacl-util.js",
+            "assets/scripts/ed2curve.js",
+            "assets/scripts/fast-memoize.js",
+            "assets/scripts/crypto.js",
+            "assets/scripts/sha256.js",
+            "assets/scripts/aes.js",
+            "assets/scripts/background.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "activeTab",
+        "storage"
+    ]
+}
